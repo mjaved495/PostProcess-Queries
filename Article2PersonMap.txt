@@ -29,7 +29,7 @@ PREFIX scires:   <http://vivoweb.org/ontology/scientific-research#>
 SELECT ?art ?per ?gname ?mname ?fname
 WHERE
 {
-  ?art a bibo:Article .
+  ?art a bibo:Document .
   ?art vivo:relatedBy ?auth .
   ?auth a vivo:Authorship .
   ?auth vivo:relates ?per .   

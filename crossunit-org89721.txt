@@ -54,7 +54,7 @@ FILTER(str(?per1) != str(?per2)) .
 ?auth2 a vivo:Authorship .
 ?auth1 vivo:relates ?art .
 ?auth2 vivo:relates ?art .
-?art a bibo:Article .
+?art a bibo:Document .
 ?art rdfs:label ?artL .
 ?art vivo:dateTimeValue ?dtv .
 ?dtv vivo:dateTime ?dt .

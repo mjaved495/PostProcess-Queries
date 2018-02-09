@@ -28,7 +28,7 @@ PREFIX scires:   <http://vivoweb.org/ontology/scientific-research#>
 
 SELECT ?article (GROUP_CONCAT(?kw ; separator=";;") as ?keywords) 
 WHERE {
-	?article a bibo:Article .
+	?article a bibo:Document .
 	?article vivoc:inferredKeywords ?kw .
 }
 GROUP BY ?article

@@ -28,7 +28,7 @@ PREFIX scires:   <http://vivoweb.org/ontology/scientific-research#>
 
 SELECT ?article ?articleTitle ?abstract
 WHERE {
-      ?article a bibo:Article .
+      ?article a bibo:Document .
       ?article rdfs:label ?articleTitle .
       ?article bibo:abstract ?abstract .
 }

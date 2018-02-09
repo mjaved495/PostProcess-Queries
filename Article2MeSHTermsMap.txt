@@ -28,7 +28,7 @@ PREFIX scires:   <http://vivoweb.org/ontology/scientific-research#>
 
 SELECT ?article (GROUP_CONCAT(?meshLabel ; separator=";;") as ?meshTerm) 
 WHERE {
-?article a bibo:Article .
+?article a bibo:Document .
 ?article vivo:hasSubjectArea ?mesh .
 ?mesh a vivoc:MeshTerm .
 ?mesh rdfs:label ?meshLabel .

@@ -28,6 +28,6 @@ PREFIX scires:   <http://vivoweb.org/ontology/scientific-research#>
 
 SELECT DISTINCT ?keywords
 WHERE {
-	?article a bibo:Article .
+	?article a bibo:Document .
 	?article vivo:freetextKeyword ?keywords .
 }

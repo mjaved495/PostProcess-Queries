@@ -29,7 +29,7 @@ PREFIX scires:   <http://vivoweb.org/ontology/scientific-research#>
 SELECT ?perL ?netId ?art ?wosId ?pmId
 WHERE
 {
-?art a bibo:Article .
+?art a bibo:Document .
 OPTIONAL {?art vivoc:wosId ?wosId . }
 OPTIONAL {?art bibo:pmid ?pmId . }
 ?art vivo:relatedBy ?auth .

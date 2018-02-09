@@ -28,7 +28,7 @@ PREFIX scires:   <http://vivoweb.org/ontology/scientific-research#>
 
 SELECT ?article ?wosId ?pubmedId
 WHERE {
-      ?article a bibo:Article .
+      ?article a bibo:Document .
       OPTIONAL { ?article vivoc:wosId ?wosId . }
       OPTIONAL { ?article bibo:pmid ?pubmedId . }
 }
